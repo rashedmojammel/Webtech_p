@@ -1,6 +1,4 @@
-// ========== Donation Form JavaScript ==========
 
-// Wait until the DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
 
   // Form reference
@@ -83,18 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
   stateSelect.selectedIndex = 0;
   countrySelect.value = "Bangladesh"; // Default country
 
-  // ========== 6. Confirm Password (Future-proof example) ==========
-  // Uncomment these lines if you add password fields in HTML
-  /*
-  const password = document.getElementById("Password");
-  const confirmPassword = document.getElementById("ConfirmPassword");
-  form.addEventListener("submit", function (e) {
-    if (password && confirmPassword && password.value !== confirmPassword.value) {
-      alert("Passwords do not match!");
-      e.preventDefault();
-    }
-  });
-  */
 
   // ========== 7. Reset Confirmation ==========
   const resetButton = document.querySelector("input[type='reset']");
@@ -132,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
   comments.setAttribute("maxlength", maxChars);
   comments.addEventListener("input", function () {
     const remaining = maxChars - comments.value.length;
-    comments.nextElementSibling?.remove(); // remove old message
+    comments.nextElementSibling?.remove();
     const msg = document.createElement("small");
     msg.textContent = `${remaining} characters remaining.`;
     msg.style.color = remaining <= 20 ? "red" : "#555";
