@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<body>
+
+    <h1>Add new product </h1>
+    <form id = "ProductForm">
+
+
+        <label>Product Name :</label>
+        <input type="text" id="productName">
+        <span class ="error"></span><br>
+
+
+        <label>Price :</label>
+        <input type="number" id="productPrice">
+        <span class="error"></span><br>
+
+        <label>Quantity in stock :</label>
+        <input type = "number" id="productQuantity">
+        <span class = "error"></span><br>
+
+        <label>Category :</label>
+        <select id="Category">
+            <option value="">---select category---</option>
+            <option value="">Gadets</option>
+            <option value="">Gadets2</option>
+        </select>
+        <span class="error"></span><br>
+
+        <label>Expiry date :</label>
+        <input type="date" id="expiryDate">
+        <span class="error"></span><br>
+
+        <button type="submit">Add product</button>
+    </form>
+    <script src="script.js"></script>
+</body>

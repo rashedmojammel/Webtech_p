@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend style="color: brown;"<b>Personal information</b></legend>
+            <label for="lname">Name:</label>
+            <input type="text" name="name" required><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" required><br>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" required><br>
+
+            <label for="dob">Date of birth :</label>
+            <input type="date" name="dob" required><br>
+
+            <label for="gender">Gender :</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="male">Female</label>
+
+            <input type="radio" id="female" name="gender" value="others" required>
+            <label for="male">Other</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Department selection</legend>
+            <label for="department">Select Department :</label>
+            <select id="department" name="department" required>
+                <option value="CSE">Computer science and engineering</option>
+                <option value="EEE">Electrical and electronics engineering</option>
+                <option value="ME">Mechanical engineering</option>
+                <option value="SE">Software engineering</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>File upload</legend>
+            <label for="photo">Upload recent photo :</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*" required><br>
+            <label for="transcript">Upload transcript :</label><br>
+            <input type="file" id="transcript" name="transcript" accept=".pdf,.doc,.jpg,.png">
+
+        </fieldset>
+        <input type="Submit" value="Submit application"><br>
+        <input type="reset" value="Reset"><br>
+
+
+    </form>
+    
+</body>
+</html>
